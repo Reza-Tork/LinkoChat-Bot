@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LinkoChat.Application\LinkoChat.Application.csproj" />
+    <ProjectReference Include="..\LinkoChat.Data\LinkoChat.Data.csproj" />
   </ItemGroup>
 
 </Project>

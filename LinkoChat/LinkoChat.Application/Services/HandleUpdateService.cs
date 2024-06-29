@@ -46,9 +46,8 @@ namespace LinkoChat.Application.Services
             var message = update.Message;
             var user = update.Message.From;
 
-            
 
-
+            await _botClient.SendTextMessageAsync(message.Chat.Id, message.Text);
 
         }
     }

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LinkoChat.Application\LinkoChat.Application.csproj" />
+    <ProjectReference Include="..\LinkoChat.IoC\LinkoChat.IoC.csproj" />
   </ItemGroup>
 
 </Project>

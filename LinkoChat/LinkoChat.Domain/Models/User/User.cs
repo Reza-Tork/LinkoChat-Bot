@@ -9,8 +9,7 @@ namespace LinkoChat.Domain.Models
 
         public virtual Profile Profile { get; set; }
         public virtual Location Location { get; set; }
-        public virtual ICollection<Like> Likes { get; set; }
-        public virtual ICollection<UserFollower> Followers { get; set; } = [];
-        public virtual ICollection<UserFollower> Followees { get; set; } = [];
+        public virtual ICollection<Follower> Followers { get; set; } = [];
+        public virtual ICollection<Follower> Followees { get; set; } = [];
     }
 }

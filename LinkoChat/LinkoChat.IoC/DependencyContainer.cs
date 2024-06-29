@@ -1,20 +1,19 @@
 ﻿using LinkoChat.Application.Interfaces;
 using LinkoChat.Application.Services;
+using LinkoChat.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using Telegram.Bot;
 
 namespace LinkoChat.IoC
 {
     public static class DependencyContainer
     {
-        public static IServiceCollection AddTelegramMiddleware(this IServiceCollection services)
+        public static IServiceCollection AddDependencies(this IServiceCollection services, string connectionString)
         {
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
             services.AddScoped<IHandleUpdateService, HandleUpdateService>();
 
             return services;

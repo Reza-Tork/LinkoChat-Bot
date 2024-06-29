@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LinkoChat.Domain.Models
 { 
-    public class UserFollower
+    public class Follower
     {
         public int FollowerId { get; set; }
-        public virtual User Follower { get; set; }
+        public virtual User UserFollower { get; set; }
 
         public int FolloweeId { get; set; }
-        public virtual User Followee { get; set; }
+        public virtual User UserFollowee { get; set; }
     }
 }

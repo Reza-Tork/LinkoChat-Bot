@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.Web", "LinkoChat.Web\LinkoChat.Web.csproj", "{4798D5AD-2AC7-49ED-AD4C-1048CE5BD666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkoChat.Web", "LinkoChat.Web\LinkoChat.Web.csproj", "{4798D5AD-2AC7-49ED-AD4C-1048CE5BD666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.IoC", "LinkoChat.IoC\LinkoChat.IoC.csproj", "{E116A92B-A6D9-4CCB-AE12-9A21E2E917EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkoChat.IoC", "LinkoChat.IoC\LinkoChat.IoC.csproj", "{E116A92B-A6D9-4CCB-AE12-9A21E2E917EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.Data", "LinkoChat.Data\LinkoChat.Data.csproj", "{49311E04-C547-45B6-B0FD-146E199AB233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkoChat.Data", "LinkoChat.Data\LinkoChat.Data.csproj", "{49311E04-C547-45B6-B0FD-146E199AB233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.Domain", "LinkoChat.Domain\LinkoChat.Domain.csproj", "{31F18A7E-F605-49C5-834F-BE8CF419C47A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkoChat.Domain", "LinkoChat.Domain\LinkoChat.Domain.csproj", "{31F18A7E-F605-49C5-834F-BE8CF419C47A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.Application", "LinkoChat.Application\LinkoChat.Application.csproj", "{8BA47C11-E98B-4565-AFCE-754EBDF9AA38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkoChat.Application", "LinkoChat.Application\LinkoChat.Application.csproj", "{8BA47C11-E98B-4565-AFCE-754EBDF9AA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkoChat.ConsoleApp", "LinkoChat.ConsoleApp\LinkoChat.ConsoleApp.csproj", "{14E065DB-78B2-49DD-91FE-6A86CCD316D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8BA47C11-E98B-4565-AFCE-754EBDF9AA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA47C11-E98B-4565-AFCE-754EBDF9AA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA47C11-E98B-4565-AFCE-754EBDF9AA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E065DB-78B2-49DD-91FE-6A86CCD316D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E065DB-78B2-49DD-91FE-6A86CCD316D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E065DB-78B2-49DD-91FE-6A86CCD316D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E065DB-78B2-49DD-91FE-6A86CCD316D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
