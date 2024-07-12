@@ -11,11 +11,11 @@ namespace LinkoChat.Domain.Models
     public class Location
     {
         [Key, ForeignKey("User")]
-        public int UserId { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public long UserId { get; set; }
+        public City? City { get; set; }
+        public State? State { get; set; }
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
         public virtual User User { get; set; }
     }
 }

@@ -1,22 +1,21 @@
 ﻿using LinkoChat.Domain.Enums;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LinkoChat.Domain.Models
 {
     public class Profile
     {
         [Key, ForeignKey("User")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
 
         public DateTime LastActivity { get; set; }
 
         public DateTime RegisterDate { get; set; } = DateTime.Now;
+
+        public string? CallerUsername { get; set; }
+
+        public bool IsFirstStart { get; set; } = true;
 
         public string Username { get; set; }
 
@@ -28,7 +27,9 @@ namespace LinkoChat.Domain.Models
         [Range(12, 99)]
         public int? Age { get; set; }
 
-        public MaritalStatus? MaritalStatus { get; set; } = Enums.MaritalStatus.None;
+        public Gender Gender { get; set; } = Gender.Unknown;
+
+        public MaritalStatus MaritalStatus { get; set; } = MaritalStatus.None;
 
         public bool SameAgeSearch { get; set; } = false;
 

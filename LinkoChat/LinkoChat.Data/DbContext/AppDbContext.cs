@@ -1,10 +1,9 @@
-﻿using LinkoChat.Domain.Models;
+﻿using LinkoChat.Data.Properties;
+using LinkoChat.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace LinkoChat.Data
 {
@@ -14,27 +13,21 @@ namespace LinkoChat.Data
         {
 
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Follower>()
-                .HasOne(uf => uf.UserFollower)
-                .WithMany(u => u.Followees)
-                .HasForeignKey(uf => uf.FollowerId);
-
-            modelBuilder.Entity<Follower>()
-                .HasOne(uf => uf.UserFollowee)
-                .WithMany(u => u.Followers)
-                .HasForeignKey(uf => uf.FolloweeId);
-
-
-
+            
             base.OnModelCreating(modelBuilder);
-
         }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<Location> Locations { get; set; }
-        public DbSet<Follower> UsersFollower { get; set; }
+        public DbSet<State> Statements { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Chat> Chats { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Domain.Models.Queue> Queues { get; set; }
+
     }
 }

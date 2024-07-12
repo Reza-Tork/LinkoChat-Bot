@@ -34,7 +34,7 @@ namespace LinkoChat.ConsoleApp
                 .ConfigureLogging(logging =>
                 {
                     logging.AddConsole();
-                    logging.SetMinimumLevel(LogLevel.Information);
+                    logging.SetMinimumLevel(LogLevel.Trace);
                 })
                 .UseConsoleLifetime();
 
